@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -102,4 +103,44 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  .hover-scale {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .hover-scale:hover {
+    transform: scale(1.05);
+  }
+
+  .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Medical-themed gradients and backgrounds */
+.medical-bg {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+}
+
+.hero-pattern {
+  background-image: radial-gradient(circle at 1px 1px, rgba(59, 130, 246, 0.1) 1px, transparent 0);
+  background-size: 40px 40px;
 }
