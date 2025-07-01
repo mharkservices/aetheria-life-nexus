@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Search, Users, Mail, Phone, News, Video, ArrowDown, ArrowUp } from 'lucide-react';
+import { Search, Users, Mail, Phone, Newspaper, Video, ArrowDown, ArrowUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -161,7 +160,7 @@ const Index = () => {
             
             <Card className="bg-white/10 border-white/20 text-white hover:bg-white/20 transition-colors">
               <CardContent className="p-6 text-center">
-                <News className="h-12 w-12 mx-auto mb-4 text-blue-200" />
+                <Newspaper className="h-12 w-12 mx-auto mb-4 text-blue-200" />
                 <h3 className="text-xl font-semibold mb-2">Latest Research</h3>
                 <p className="text-blue-100 mb-4">Stay updated with our latest clinical studies, publications, and news</p>
                 <Button variant="outline" className="border-white text-white hover:bg-white hover:text-blue-900">
